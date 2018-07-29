@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class DelayedButton extends React.Component {
   delayedResponse = (event) => {
-
+    event.persist()
     setTimeout((event) => this.props.onDelayedClick(event), this.props.delay);
   }
   render(){
