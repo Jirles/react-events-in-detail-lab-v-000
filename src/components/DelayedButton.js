@@ -8,6 +8,6 @@ export default class DelayedButton extends React.Component {
     return setTimeout((event) => this.props.onDelayedClick(event), this.props.delay);
   }
   render(){
-    return <button onClick={(e) => this.delayedResponse(e.persist())}>Delayed Response</button>
+    return <button onClick={this.delayedResponse}>Delayed Response</button>
   }
 }
